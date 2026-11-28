@@ -1,0 +1,1069 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DatZ — Real-World Data, Ready to Use</title>
+    <meta name="description" content="A marketplace of live, real-world databases across categories, structured, source-linked and ready to explore." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+
+<section class="welcome-screen" id="welcomeScreen">
+  <div class="lp-aurora" aria-hidden="true"></div>
+  <div class="welcome-grid" aria-hidden="true"></div>
+  <header class="welcome-header">
+    <a class="brand" href="#welcomeTop" aria-label="DatZ home">
+      <img src="./Logo.png" alt="DatZ" class="brand-logo" />
+    </a>
+    <nav class="welcome-nav" aria-label="Landing page navigation">
+      <a href="#welcomeAbout">About</a>
+      <a href="#welcomeUseCases">Use cases</a>
+    </nav>
+    <div class="welcome-header-actions">
+      <span class="welcome-status"><i></i> Live data network</span>
+      <button class="welcome-sign-in" id="welcomeSignInButton">Sign in with Google <span>↗</span></button>
+    </div>
+  </header>
+
+  <div class="lp-hero" id="welcomeTop">
+    <div class="lp-hero-copy">
+      <div class="eyebrow"><i></i> LIVE REAL-WORLD DATABASES · EVERY CATEGORY</div>
+      <h1>Real-world data.<br /><span>Ready to use.</span></h1>
+      <p>Live databases across every category, structured and ready to explore.</p>
+      <div class="welcome-actions">
+        <button class="primary-button welcome-start" id="getStartedButton">Explore live datasets <span>↗</span></button>
+        <a class="welcome-text-link" href="#welcomeAbout">About DatZ <span>↓</span></a>
+      </div>
+    </div>
+
+    <div class="lp-orbit" aria-label="Live data network overview">
+      <svg class="lp-orbit-svg" viewBox="0 0 600 600" aria-hidden="true">
+        <defs>
+          <radialGradient id="lpCore" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#c8ff50" stop-opacity=".55" />
+            <stop offset="1" stop-color="#c8ff50" stop-opacity="0" />
+          </radialGradient>
+        </defs>
+        <circle cx="300" cy="300" r="140" fill="url(#lpCore)" />
+        <g class="ring r1"><circle cx="300" cy="300" r="105" /><circle class="node" cx="405" cy="300" r="5" /><circle class="node alt" cx="195" cy="300" r="3" /></g>
+        <g class="ring r2"><circle cx="300" cy="300" r="170" /><circle class="node" cx="300" cy="130" r="5" /><circle class="node alt" cx="470" cy="300" r="4" /><circle class="node" cx="180" cy="420" r="3" /></g>
+        <g class="ring r3"><circle cx="300" cy="300" r="235" /><circle class="node alt" cx="535" cy="300" r="5" /><circle class="node" cx="134" cy="466" r="4" /><circle class="node" cx="420" cy="95" r="3" /></g>
+      </svg>
+      <div class="lp-core"><span>DatZ</span><small>DATA CORE</small></div>
+      <span class="lp-chip c1 live">Real estate · Live</span>
+      <span class="lp-chip c2">Business &amp; commerce</span>
+      <span class="lp-chip c3">Public records</span>
+      <span class="lp-chip c4">Finance &amp; markets</span>
+      <span class="lp-chip c5">Jobs &amp; talent</span>
+
+      <div class="lp-float stats">
+        <div class="lp-float-head"><span><i></i> LIVE DATA NETWORK</span><strong>ONLINE</strong></div>
+        <div class="lp-float-grid">
+          <div><strong id="welcomeRowsUpdated">—</strong><span>rows today</span></div>
+          <div><strong id="welcomeActiveRegions">—</strong><span>regions</span></div>
+          <div><strong id="welcomeUptime">—</strong><span>uptime</span></div>
+        </div>
+      </div>
+      <div class="lp-float spark">
+        <div class="lp-float-head"><span>REAL ESTATE · LIVE</span><strong id="welcomeDatasetCount">—</strong></div>
+        <svg viewBox="0 0 220 70" preserveAspectRatio="none" aria-hidden="true">
+          <defs><linearGradient id="lpSpark" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5d8cff" stop-opacity=".45" /><stop offset="1" stop-color="#5d8cff" stop-opacity="0" /></linearGradient></defs>
+          <path d="M0 58 L20 50 L40 54 L62 38 L84 44 L108 26 L130 32 L152 16 L176 22 L198 8 L220 12 L220 70 L0 70 Z" fill="url(#lpSpark)" />
+          <path class="line" d="M0 58 L20 50 L40 54 L62 38 L84 44 L108 26 L130 32 L152 16 L176 22 L198 8 L220 12" />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="lp-ticker" aria-hidden="true">
+    <div class="lp-ticker-track">
+      <span>Real estate</span><i></i><span>Business &amp; commerce</span><i></i><span>Public records</span><i></i><span>Finance &amp; markets</span><i></i><span>Jobs &amp; talent</span><i></i><span>Mobility &amp; logistics</span><i></i><span>Research data</span><i></i><span>New categories added continuously</span><i></i>
+      <span>Real estate</span><i></i><span>Business &amp; commerce</span><i></i><span>Public records</span><i></i><span>Finance &amp; markets</span><i></i><span>Jobs &amp; talent</span><i></i><span>Mobility &amp; logistics</span><i></i><span>Research data</span><i></i><span>New categories added continuously</span><i></i>
+    </div>
+  </div>
+
+  <section class="lp-stats lp-reveal" aria-label="DatZ by the numbers">
+    <div><strong>01</strong><span>live now</span></div>
+    <div><strong>05</strong><span>in development</span></div>
+    <div><strong>6h</strong><span>refresh cycle</span></div>
+  </section>
+
+  <section class="welcome-section lp-about" id="welcomeAbout">
+    <div class="lp-about-main lp-reveal">
+      <span class="welcome-kicker">ABOUT DATZ</span>
+      <h2>We turn the real world<br /><em>into live databases.</em></h2>
+      <p>One marketplace for structured, source-linked data across every category.</p>
+      <div class="lp-about-tags"><span>Live</span><span>Source-linked</span><span>Structured</span><span>Exportable</span></div>
+    </div>
+    <ol class="lp-flow">
+      <li class="lp-reveal">
+        <span class="lp-flow-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8" stroke-dasharray="2 3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg></span>
+        <div><b>01</b><strong>Source</strong><small>PUBLIC REGISTRIES · LISTINGS</small></div>
+      </li>
+      <li class="lp-reveal">
+        <span class="lp-flow-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span>
+        <div><b>02</b><strong>Structure</strong><small>CLEAN · MAPPED SCHEMAS</small></div>
+      </li>
+      <li class="lp-reveal">
+        <span class="lp-flow-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="M8.5 12l2.5 2.5L15.5 10"/></svg></span>
+        <div><b>03</b><strong>Verify</strong><small>QUALITY-CHECKED RECORDS</small></div>
+      </li>
+      <li class="lp-reveal">
+        <span class="lp-flow-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        <div><b>04</b><strong>Deliver</strong><small>LIVE · READY TO EXPORT</small></div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="welcome-section welcome-use-cases" id="welcomeUseCases">
+    <div class="welcome-section-heading compact lp-reveal">
+      <div><span>BUILT FOR REAL WORK</span><h2>One data layer. <em>Many decisions.</em></h2></div>
+    </div>
+    <div class="welcome-use-grid">
+      <article class="lp-reveal"><span>USE CASE</span><h3>Market intelligence</h3><b>Trends · Benchmarks · Inventory</b></article>
+      <article class="lp-reveal"><span>USE CASE</span><h3>Investment research</h3><b>Registries · Filings · History</b></article>
+      <article class="lp-reveal"><span>USE CASE</span><h3>Product &amp; operations</h3><b>CSV export · Analysis workspace · Clean schema</b></article>
+      <article class="welcome-use-featured lp-reveal"><span>CUSTOM DATA</span><h3>Need another category?</h3><button id="welcomeCustomRequest" type="button">Request a dataset <b>↗</b></button></article>
+    </div>
+  </section>
+
+  <section class="welcome-final-cta lp-final">
+    <div class="lp-final-word" aria-hidden="true">DATZ</div>
+    <div class="lp-reveal">
+      <span><i></i> LIVE MARKETPLACE</span>
+      <h2>Start with the data.<br /><em>Decide with confidence.</em></h2>
+      <p>Explore the live catalog, inspect real records and see what better data can do for your team.</p>
+    </div>
+    <div class="welcome-final-actions lp-reveal">
+      <button class="primary-button" id="welcomeExploreBottom">Explore datasets <span>↗</span></button>
+      <button class="welcome-sign-in" id="welcomeSignInBottom">Sign in with Google <span>↗</span></button>
+    </div>
+  </section>
+
+  <footer class="welcome-footer">
+    <a class="brand" href="#welcomeTop" aria-label="DatZ home"><img src="./Logo.png" alt="DatZ" class="brand-logo" /></a>
+    <p>Structured, trusted data for decisions that need more than a spreadsheet.</p>
+    <div><a href="mailto:hello@datz.in">hello@datz.in</a><span>© 2026 DatZ Data Systems</span></div>
+  </footer>
+</section>
+
+    <div class="app-shell" id="appShell" aria-hidden="true">
+
+<header class="topbar">
+  <a class="brand" href="#" aria-label="DatZ home">
+    <img src="./Logo.png" alt="DatZ" class="brand-logo" />
+  </a>
+  <nav class="nav-links">
+    <button class="nav-link active" data-tab="catalog" id="navMarketplace">Marketplace</button>
+    <button class="nav-link" id="navYourDatabases">Your Databases</button>
+  </nav>
+  <div class="header-actions">
+    <div class="header-search" id="headerSearch" role="button" tabindex="0" title="Search catalog (⌘K)">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-3.5-3.5"></path></svg>
+      <span>Quick search...</span>
+      <kbd>⌘K</kbd>
+    </div>
+    <button class="profile-top-button" id="profileTopButton" type="button" aria-label="Open profile">
+      <span class="profile-top-avatar" id="profileTopAvatar">U</span>
+      <span>Profile</span>
+    </button>
+    <div id="authSlot">
+      <button class="header-auth-btn" id="headerSignInBtn">Sign in with Google</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-copy">
+      <div class="eyebrow"><i></i> LIVE DATA MARKETPLACE · MULTIPLE DOMAINS</div>
+      <h1>Data you can<br /><span>actually use.</span></h1>
+      <p>Discover structured, continuously maintained datasets for research, operations, and product teams. Pune Real Estate Intelligence is our first live dataset; more domains are being added.</p>
+      <div class="hero-actions">
+        <button class="primary-button" id="exploreButton">Explore live datasets <span>↗</span></button>
+        <button class="secondary-button" id="downloadButton">How downloads work <span>›</span></button>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="activity-card single-dataset-card">
+        <div class="activity-head"><span><i></i> FEATURED DATASET</span><strong>LIVE</strong></div>
+        <div class="featured-dataset-body">
+          <span class="featured-kicker">AVAILABLE NOW</span>
+          <strong id="heroDatasetName">—</strong>
+          <p id="heroDatasetDescription">—</p>
+          <div class="featured-stats">
+            <div><strong id="heroDatasetRecords">—</strong><span>records</span></div>
+            <div><strong id="heroDatasetFields">—</strong><span>fields</span></div>
+          </div>
+        </div>
+        <div class="activity-foot"><span><i></i> <span id="heroRegions">—</span> active regions</span><strong id="heroLastScrape">—</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="telemetry" aria-label="Platform activity">
+    <div><i></i><strong id="telemetryRows">—</strong><span>properties updated today</span></div>
+    <div><i></i><strong id="telemetryLastScrape">—</strong><span>last scrape</span></div>
+    <div><i></i><strong id="telemetryUptime">—</strong><span>scraper uptime</span></div>
+  </div>
+
+  <section class="marketplace" id="marketplace">
+    <aside class="filters">
+      <div class="filter-heading">
+        <h2>Filters</h2>
+        <button id="clearFilters">Reset filters</button>
+      </div>
+
+      <!-- Top-Level: Category -->
+      <div class="filter-group category-root-group">
+        <button class="filter-title">Category <span>−</span></button>
+        <div class="filter-options category-filter-scroll" id="categoryFilterOptions">
+          <label class="category-main-option">
+            <input type="radio" name="category" value="all" checked />
+            <span class="category-name">All Categories</span>
+            <b class="badge-pill" id="filterAllCount">14</b>
+          </label>
+          <label class="category-main-option">
+            <input type="radio" name="category" value="Residential Real Estate" />
+            <span class="category-name">Residential Real Estate</span>
+          </label>
+          <label class="category-main-option">
+            <input type="radio" name="category" value="Commercial Real Estate" />
+            <span class="category-name">Commercial Real Estate</span>
+          </label>
+          <label class="category-main-option">
+            <input type="radio" name="category" value="Plots & Land" />
+            <span class="category-name">Plots & Land</span>
+          </label>
+          <label class="category-main-option">
+            <input type="radio" name="category" value="MahaRERA Projects" />
+            <span class="category-name">MahaRERA Projects</span>
+          </label>
+          <label class="category-main-option">
+            <input type="radio" name="category" value="Rental Properties & PG" />
+            <span class="category-name">Rental Properties & PG</span>
+          </label>
+          <label class="category-main-option">
+            <input type="radio" name="category" value="Co-Working & Shared Spaces" />
+            <span class="category-name">Co-Working & Shared Spaces</span>
+          </label>
+          <label class="category-main-option">
+            <input type="radio" name="category" value="Industrial & Warehousing" />
+            <span class="category-name">Industrial & Warehousing</span>
+          </label>
+          <label class="category-main-option">
+            <input type="radio" name="category" value="Retail & High-Street Shops" />
+            <span class="category-name">Retail & High-Street Shops</span>
+          </label>
+          <label class="category-main-option">
+            <input type="radio" name="category" value="Hospitality & Resorts" />
+            <span class="category-name">Hospitality & Resorts</span>
+          </label>
+          <label class="category-main-option">
+            <input type="radio" name="category" value="Healthcare & Medical Spaces" />
+            <span class="category-name">Healthcare & Medical Spaces</span>
+          </label>
+          <label class="category-main-option">
+            <input type="radio" name="category" value="Educational Institutes & Campus" />
+            <span class="category-name">Educational Institutes & Campus</span>
+          </label>
+          <label class="category-main-option">
+            <input type="radio" name="category" value="Agricultural Land & Farmhouses" />
+            <span class="category-name">Agricultural Land & Farmhouses</span>
+          </label>
+          <label class="category-main-option">
+            <input type="radio" name="category" value="Bank Auction & Distressed Assets" />
+            <span class="category-name">Bank Auction & Distressed Assets</span>
+          </label>
+          <label class="category-main-option">
+            <input type="radio" name="category" value="Luxury & Penthouse Villas" />
+            <span class="category-name">Luxury & Penthouse Villas</span>
+          </label>
+        </div>
+
+        <!-- Nested Filters INSIDE Real Estate -->
+        <div class="nested-filter-tree" id="realEstateSubFilters">
+
+          <!-- Nested Filter 1: City -->
+          <div class="sub-filter-group">
+            <div class="sub-filter-title">City <span class="badge-accent">Location</span></div>
+            <div class="filter-options">
+              <label><input type="radio" name="city" value="pune" checked /> <span>Pune (Focus)</span><b>49</b></label>
+              <label><input type="radio" name="city" value="mumbai" /> <span>Mumbai Metro</span><b>9</b></label>
+              <label><input type="radio" name="city" value="bengaluru" /> <span>Bengaluru</span><b>9</b></label>
+              <label><input type="radio" name="city" value="hyderabad" /> <span>Hyderabad</span><b>8</b></label>
+              <label><input type="radio" name="city" value="ncr" /> <span>Delhi-NCR</span><b>6</b></label>
+              <label><input type="radio" name="city" value="all" /> <span>All Cities</span><b>All</b></label>
+            </div>
+          </div>
+
+          <div class="sub-filter-group" id="puneMicroMarketsGroup">
+            <div class="sub-filter-title">Pune Micro-Markets <span class="sub-filter-tag">Localities</span></div>
+            <div class="filter-options">
+              <label><input type="checkbox" name="location" value="Baner" /> <span>Baner (411045)</span><b>18</b></label>
+              <label><input type="checkbox" name="location" value="Balewadi" /> <span>Balewadi (411045)</span><b>14</b></label>
+              <label><input type="checkbox" name="location" value="Wakad" /> <span>Wakad (411057)</span><b>16</b></label>
+              <label><input type="checkbox" name="location" value="Kharadi" /> <span>Kharadi (411014)</span><b>12</b></label>
+              <label><input type="checkbox" name="location" value="Hinjewadi" /> <span>Hinjewadi IT Hub</span><b>22</b></label>
+              <label><input type="checkbox" name="location" value="Viman Nagar" /> <span>Viman Nagar (411014)</span><b>8</b></label>
+              <label><input type="checkbox" name="location" value="Shivajinagar" /> <span>Shivajinagar / FC Rd</span><b>6</b></label>
+              <label><input type="checkbox" name="location" value="Bavdhan" /> <span>Bavdhan (411021)</span><b>7</b></label>
+            </div>
+          </div>
+          <div class="sub-filter-group">
+            <div class="sub-filter-title">Property Type <span>−</span></div>
+            <div class="filter-options">
+              <label><input type="checkbox" name="property_type" value="Residential" /> <span>Direct-Owner Residential</span><b>18</b></label>
+              <label><input type="checkbox" name="property_type" value="RERA Commercial" /> <span>RERA Commercial Projects</span><b>8</b></label>
+              <label><input type="checkbox" name="property_type" value="Commercial" /> <span>High-Street Retail Leases</span><b>7</b></label>
+              <label><input type="checkbox" name="property_type" value="Rental" /> <span>Rental Yield Indices</span><b>6</b></label>
+              <label><input type="checkbox" name="property_type" value="Historical" /> <span>Historical Price Drops</span><b>5</b></label>
+            </div>
+          </div>
+          <div class="sub-filter-group">
+            <div class="sub-filter-title">Update Frequency <span>−</span></div>
+            <div class="filter-options">
+              <label><input type="radio" name="frequency" value="" checked /> <span>All Frequencies</span><b>All</b></label>
+              <label><input type="radio" name="frequency" value="Real-Time" /> <span>Real-Time</span><b>15m</b></label>
+              <label><input type="radio" name="frequency" value="Hourly" /> <span>Hourly</span><b>60m</b></label>
+              <label><input type="radio" name="frequency" value="Daily" /> <span>Daily</span><b>24h</b></label>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </aside>
+
+    <div class="catalog">
+      <div class="catalog-header">
+        <div>
+          <div class="section-kicker">DATA MARKETPLACE</div>
+          <h2>Live datasets <span id="datasetCount">—</span></h2>
+        </div>
+        <div class="catalog-tools">
+          <div class="search-box">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"></circle><path d="m16 16 4 4"></path></svg>
+            <input id="searchInput" type="search" placeholder="Search datasets, coverage, sources…" />
+            <kbd>⌘ K</kbd>
+          </div>
+        </div>
+      </div>
+      <div class="active-filters" id="activeFilters"></div>
+      <div class="dataset-grid" id="datasetGrid"></div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-brand">
+    <a class="brand" href="#" aria-label="DatZ home"><img src="./Logo.png" alt="DatZ" class="brand-logo" /></a>
+    <p>Structured, trusted data for decisions that need more than a spreadsheet.</p>
+    <a class="footer-contact" href="mailto:hello@datz.in">hello@datz.in</a>
+  </div>
+  <div class="footer-links"><strong>Explore</strong><a href="#marketplace">Dataset marketplace</a><a href="#marketplace">Live catalog</a><a href="#marketplace">Request a dataset</a></div>
+  <div class="footer-links"><strong>Data delivery</strong><span>CSV · XLSX · Parquet</span><span>Schema preview</span><span>In-app analysis</span></div>
+  <div class="footer-links"><strong>Contact & trust</strong><a href="mailto:hello@datz.in">hello@datz.in</a><a href="#marketplace">Data sourcing</a><span>Privacy-first access</span></div>
+  <div class="footer-bottom"><span>© 2026 DatZ Data Systems · Built for data teams in India</span><span><i></i> Platform status: operational</span></div>
+</footer>
+
+<aside class="drawer full-window-drawer" id="datasetDrawer" aria-hidden="true">
+  <div class="drawer-backdrop"></div>
+  <div class="drawer-panel full-window">
+    <header class="drawer-header">
+      <div>
+        <div class="drawer-kicker"><i></i> LIVE DATASET PREVIEW</div>
+        <h2 id="drawerTitle">Select a dataset</h2>
+      </div>
+      <div class="drawer-header-actions">
+        <button class="icon-button" id="maximizeDrawer" title="Toggle full window" aria-label="Toggle full window">⤢</button>
+        <button class="icon-button" id="closeDrawer" aria-label="Close workbench">✕</button>
+      </div>
+    </header>
+    <div class="drawer-subbar">
+      <div><span>Verified Records</span><strong id="drawerRecords">—</strong></div>
+      <div><span>Attributes</span><strong id="drawerFields">—</strong></div>
+      <div><span>Coverage</span><strong id="drawerCoverage">—</strong></div>
+      <button class="primary-button small" id="drawerAccess">Get access <span>↗</span></button>
+    </div>
+    <div class="drawer-tabs">
+      <button class="drawer-tab active" data-tab="preview">Live data & analytics preview</button>
+      <button class="drawer-tab" data-tab="snapshot">Sample export (CSV / XLSX / Parquet)</button>
+    </div>
+    <div class="drawer-content">
+      <section class="tab-panel active" id="previewPanel">
+        <div class="preview-visuals-grid">
+          <article class="visual-card distribution-card">
+            <div class="visual-head"><div><span>PRICE DISTRIBUTION</span><strong id="visualTitle">—</strong></div><b id="distributionRows">—</b></div>
+            <div class="mini-bars" id="miniBars">
+              <i style="height:0%"></i><i style="height:0%"></i><i style="height:0%"></i><i style="height:0%"></i><i style="height:0%"></i><i style="height:0%"></i><i style="height:0%"></i>
+            </div>
+            <div class="mini-axis"><span id="priceBracketLow">—</span><span id="priceBracketMid">—</span><span id="priceBracketHigh">—</span></div>
+          </article>
+          <article class="visual-card pie-card">
+            <div class="visual-head"><div><span>LISTING SPLIT</span><strong id="pieTitle">—</strong></div></div>
+            <div class="preview-pie-layout">
+              <div class="preview-pie" id="previewPie"><div></div></div>
+              <div class="preview-pie-legend" id="previewLegend"></div>
+            </div>
+          </article>
+          <article class="visual-card schema-card">
+            <div class="visual-head"><div><span>AVAILABLE FIELDS</span><strong id="schemaTitle">—</strong></div><b id="schemaGroupCount">—</b></div>
+            <div class="schema-groups" id="schemaGroups"></div>
+          </article>
+        </div>
+
+        <div class="table-controls-bar">
+          <div class="table-search-box">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"></circle><path d="m16 16 4 4"></path></svg>
+            <input id="tableSearchInput" type="search" placeholder="Search across all preview fields..." />
+          </div>
+          <div class="micro-market-pills" id="microMarketPills">
+            <button class="market-pill active" data-market="all">All Pune</button>
+            <button class="market-pill" data-market="Baner">Baner</button>
+            <button class="market-pill" data-market="Balewadi">Balewadi</button>
+            <button class="market-pill" data-market="Wakad">Wakad</button>
+            <button class="market-pill" data-market="Kharadi">Kharadi</button>
+            <button class="market-pill" data-market="Hinjewadi">Hinjewadi</button>
+            <button class="market-pill" data-market="Viman Nagar">Viman Nagar</button>
+          </div>
+          <div class="table-meta-status">
+            <span id="tableRowCount">—</span>
+            <span class="data-status"><i></i> Live preview</span>
+          </div>
+        </div>
+
+        <div class="table-wrap full-window-table" id="tableView">
+          <table id="previewTable">
+            <thead></thead>
+            <tbody id="previewRows"></tbody>
+          </table>
+        </div>
+      </section>
+      <section class="tab-panel" id="snapshotPanel">
+        <div class="consumption-grid">
+          <div class="consumption-form">
+            <h3>Sample export — 23-column schema, up to 50 rows</h3>
+            <p class="sample-note">The public sample endpoint returns up to 50 rows with the 23-column schema. Get access to browse every record in-app and export the full dataset.</p>
+            <label>Delivery Format</label>
+            <div class="format-options">
+              <button class="active" data-format="csv">CSV</button>
+              <button data-format="xlsx">XLSX (Excel)</button>
+              <button data-format="parquet">Parquet</button>
+            </div>
+          </div>
+          <div class="consumption-summary">
+            <span>DATASET RECORDS</span><strong id="snapshotRecordEst">—</strong><small>Export includes 23 columns, up to 50 rows</small>
+            <button class="primary-button" id="snapshotDownload">Sample export — 23 columns, up to 50 rows <span>↓</span></button>
+            <div class="sample-result" id="sampleResult">Sample files include the 23-column schema and up to 50 rows. Get access to explore every record in-app.</div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</aside>
+
+<!-- Full in-app dataset view — Simplified, professional data studio interface -->
+<aside class="drawer full-window-drawer full-dataset-view" id="datasetFullView" aria-hidden="true">
+  <div class="drawer-backdrop" id="fullViewBackdrop"></div>
+  <div class="drawer-panel full-window">
+    <!-- Header -->
+    <header class="drawer-header">
+      <div class="full-view-header-left">
+        <div class="full-view-header-top">
+          <div class="full-view-kicker"><i></i> LIVE DATASET</div>
+          <span class="full-view-live-badge" id="fullViewBadge"><strong id="fullViewRecords">—</strong> records · <strong id="fullViewFields">23</strong> fields</span>
+        </div>
+        <h2 id="fullViewTitle">—</h2>
+        <p class="full-view-description" id="fullViewDescription">—</p>
+      </div>
+      <div class="full-view-header-actions">
+        <button class="expand-dataset-button" id="fullExpandHeaderBtn" type="button" aria-label="Expand dataset workspace" aria-pressed="false" title="Expand to fullscreen">
+          <span class="expand-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+          </span>
+        </button>
+        <button class="exit-expand-button" id="fullExpandedClose" type="button" hidden title="Exit full screen (Esc)">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"/></svg>
+          <span>Exit</span>
+        </button>
+        <button class="visualize-button" id="fullVisualizeBtn" type="button" aria-expanded="false" title="Open Visual Analytics Dashboard">
+          <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M3 3v18h18v-2H5V3H3zm4 14h2v-6H7v6zm4 0h2V7h-2v10zm4 0h2v-4h-2v4z"/></svg>
+          <span>Visualize</span>
+        </button>
+        <div class="full-view-export">
+          <button class="primary-button small" id="fullExportBtn" type="button" disabled aria-haspopup="true" aria-expanded="false">Export <span>↓</span></button>
+          <div class="export-menu" id="fullExportOptions" hidden>
+            <div class="export-menu-head"><strong>Export full dataset</strong><span>Choose a file format</span></div>
+            <div id="fullExportFormats">
+              <button type="button" class="active" data-format="csv">
+                <span class="export-fmt-badge">CSV</span>
+                <span class="export-fmt-copy"><strong>Comma-separated values</strong><small>Universal spreadsheet format</small></span>
+              </button>
+              <button type="button" data-format="xlsx">
+                <span class="export-fmt-badge">XLSX</span>
+                <span class="export-fmt-copy"><strong>Excel workbook</strong><small>Formatted, ready to open</small></span>
+              </button>
+              <button type="button" data-format="parquet">
+                <span class="export-fmt-badge">PARQUET</span>
+                <span class="export-fmt-copy"><strong>Apache Parquet</strong><small>Compressed columnar analytics</small></span>
+              </button>
+            </div>
+            <p class="export-menu-note">Every record · all fields · no sample limit</p>
+          </div>
+        </div>
+        <button class="icon-button" id="closeFullView" aria-label="Close full dataset" title="Close (Esc)">✕</button>
+      </div>
+    </header>
+
+    <section class="dataset-brief" aria-label="Dataset summary">
+      <div class="dataset-brief-intro">
+        <span class="dataset-brief-kicker"><i></i> ACCESS WORKSPACE</span>
+        <strong>Explore, compare, and export the live source records.</strong>
+        <small>Use the search and locality controls to narrow the table without changing the underlying dataset.</small>
+      </div>
+      <div class="dataset-brief-stats">
+        <div class="dataset-stat">
+          <span>AVAILABLE RECORDS</span>
+          <strong id="fullSummaryRecords">—</strong>
+          <small>in this access session</small>
+        </div>
+        <div class="dataset-stat">
+          <span>PRICED RECORDS</span>
+          <strong id="fullSummaryPriced">—</strong>
+          <small>with a published asking price</small>
+        </div>
+        <div class="dataset-stat">
+          <span>RERA-LINKED</span>
+          <strong id="fullSummaryRera">—</strong>
+          <small>with an ID or registration status</small>
+        </div>
+        <div class="dataset-stat">
+          <span>DATA SOURCES</span>
+          <strong id="fullSummarySources">—</strong>
+          <small>represented in this view</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- Unified Controls Toolbar -->
+    <div class="full-workbench-toolbar">
+      <div class="workbench-toolbar-left">
+        <div class="workbench-control-label">FIND RECORDS</div>
+        <div class="full-view-search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"></circle><path d="m16 16 4 4"></path></svg>
+          <input id="fullViewSearch" type="search" placeholder="Search across all fields..." />
+        </div>
+        <div class="micro-market-pills full-market-pills" id="fullMarketPills">
+          <button class="market-pill active" data-market="all">All Pune</button>
+          <button class="market-pill" data-market="Baner">Baner</button>
+          <button class="market-pill" data-market="Balewadi">Balewadi</button>
+          <button class="market-pill" data-market="Wakad">Wakad</button>
+          <button class="market-pill" data-market="Kharadi">Kharadi</button>
+          <button class="market-pill" data-market="Hinjewadi">Hinjewadi</button>
+          <button class="market-pill" data-market="Viman Nagar">Viman Nagar</button>
+        </div>
+      </div>
+      <div class="workbench-toolbar-right">
+        <span class="workbench-control-label">VIEW TOOLS</span>
+        <div class="full-columns-control">
+          <button class="tool-button" id="fullColumnsBtn" type="button" aria-haspopup="true" aria-expanded="false" title="Show or hide table columns">
+            Columns <b id="fullColumnCount">—</b> <span>▾</span>
+          </button>
+          <div class="column-menu" id="fullColumnOptions" hidden>
+            <div class="column-menu-head">
+              <strong>Visible columns</strong>
+              <button id="fullShowAllColumns" type="button">Show all</button>
+            </div>
+            <div class="column-menu-body"></div>
+          </div>
+        </div>
+        <button class="tool-button" id="fullFilterRowBtn" type="button" aria-pressed="false" title="Toggle per-column search filters">Filters</button>
+        <button class="tool-button" id="fullFreezeBtn" type="button" aria-pressed="true" title="Freeze index and key identifier columns">Freeze</button>
+        <select id="fullDensitySelect" class="tool-select" aria-label="Row height density">
+          <option value="standard" selected>Normal</option>
+          <option value="compact">Compact</option>
+          <option value="comfortable">Comfortable</option>
+        </select>
+        <button class="tool-button" id="fullSelectAllBtn" type="button" title="Select all rows on this page">Select page</button>
+        <button class="tool-button" id="fullCopySelected" type="button" disabled title="Copy selected rows as TSV">Copy</button>
+        <button class="tool-button" id="fullClearSelection" type="button" disabled title="Clear selection">Clear</button>
+        <button class="tool-button" id="fullResetViewBtn" type="button" title="Reset sort, filters, and columns">Reset</button>
+        <select id="fullRowsPerPage" class="tool-select" aria-label="Rows per page">
+          <option value="10">10 rows</option>
+          <option value="25" selected>25 rows</option>
+          <option value="50">50 rows</option>
+          <option value="100">100 rows</option>
+          <option value="all">All rows</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Main Dataset Table Card -->
+    <div class="full-view-table-card" id="fullViewTableCard">
+      <!-- Expanded Floating Control Bar inside Card -->
+      <div class="full-view-table-head" id="fullViewTableHead">
+        <div class="table-head-left">
+          <span><i></i> FULLSCREEN WORKBENCH</span>
+          <span id="fullViewTableHint">Press Esc or click Exit to return</span>
+        </div>
+        <div class="table-head-right">
+          <button class="exit-expand-button active" id="fullCardExitBtn" type="button" title="Exit full screen (Esc)">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"/></svg>
+            <span>Exit Fullscreen</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="full-view-table-wrap freeze-active" id="fullViewTableWrap">
+        <table id="fullDatasetTable" class="excel-table density-standard">
+          <thead></thead>
+          <tbody id="fullDatasetRows"></tbody>
+        </table>
+      </div>
+
+      <!-- Sleek Footer Bar with stats and pagination -->
+      <div class="full-workbench-footer" id="fullWorkbenchFooter">
+        <div class="workbench-footer-left">
+          <span class="footer-records-count" id="fullPaginationInfo">Showing 0 of 0 records</span>
+        </div>
+        <div class="workbench-footer-center">
+          <span class="footer-stat-pill">COUNT: <strong id="excelStatCount">0</strong></span>
+          <span class="footer-stat-pill">SUM: <strong id="excelStatSum">—</strong></span>
+          <span class="footer-stat-pill">AVG: <strong id="excelStatAvg">—</strong></span>
+          <span class="footer-stat-pill">MIN: <strong id="excelStatMin">—</strong></span>
+          <span class="footer-stat-pill">MAX: <strong id="excelStatMax">—</strong></span>
+        </div>
+        <div class="workbench-footer-right">
+          <button class="page-btn" id="fullPageFirst" type="button" title="First page">«</button>
+          <button class="page-btn" id="fullPagePrev" type="button" title="Previous page">‹ Prev</button>
+          <span class="page-current-indicator" id="fullPageCurrent">Page 1 of 1</span>
+          <button class="page-btn" id="fullPageNext" type="button" title="Next page">Next ›</button>
+          <button class="page-btn" id="fullPageLast" type="button" title="Last page">»</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<!-- Dedicated visual analytics dashboard — Minimalist Financial Terminal UI -->
+<aside class="drawer full-window-drawer viz-view" id="visualizationView" aria-hidden="true">
+  <div class="drawer-backdrop" id="vizBackdrop"></div>
+  <div class="drawer-panel full-window">
+    <header class="drawer-header viz-header">
+      <div>
+        <div class="drawer-kicker"><i></i> INTELLIGENCE TERMINAL · REAL-WORLD DATA</div>
+        <h2 id="vizTitle">—</h2>
+        <p class="viz-subtitle" id="vizSubtitle">—</p>
+      </div>
+      <div class="viz-header-actions">
+        <button class="secondary-button viz-back" id="vizBackToData" type="button">← Dataset Records</button>
+        <button class="icon-button" id="closeVisualization" aria-label="Close visualization">✕</button>
+      </div>
+    </header>
+
+    <div class="viz-toolbar">
+      <div class="viz-category-tabs" id="vizCategoryTabs">
+        <button type="button" class="viz-tab active" data-category="all">All Analytics</button>
+        <button type="button" class="viz-tab" data-category="pricing">Valuation & Pricing</button>
+        <button type="button" class="viz-tab" data-category="location">Micro-Markets & Developers</button>
+        <button type="button" class="viz-tab" data-category="delivery">RERA & Stage</button>
+      </div>
+      <span class="viz-status" id="vizStatus">—</span>
+    </div>
+
+    <!-- Single clean high-impact KPI metrics row -->
+    <div class="viz-metrics" id="vizMetrics"></div>
+
+    <div class="viz-grid" id="vizGrid">
+      <section class="chart-card" data-category="pricing">
+        <header><span>PRICE DISTRIBUTION</span><b class="chart-badge">HISTOGRAM</b></header>
+        <p>Asking price distribution across verified property listings in this market.</p>
+        <div class="chart-body" id="vizPriceHistogram"></div>
+      </section>
+
+      <section class="chart-card" data-category="location">
+        <header><span>MICRO-MARKET SHARE</span><b class="chart-badge">LOCALITY DONUT</b></header>
+        <p>Market concentration of active inventory across key localities and clusters.</p>
+        <div class="chart-body donut-body" id="vizLocalityDonut"></div>
+      </section>
+
+      <section class="chart-card chart-card-wide" data-category="pricing">
+        <header><span>PRICE VS. RATE (SQ FT)</span><b class="chart-badge">CORRELATION SCATTER</b></header>
+        <p>Each plot point represents one property — total asking price against square-foot valuation rate.</p>
+        <div class="chart-body" id="vizScatter"></div>
+      </section>
+
+      <section class="chart-card" data-category="location">
+        <header><span>DEVELOPER MARKET SHARE</span><b class="chart-badge">RANKED VOLUME</b></header>
+        <p>Developers and builders ranked by verified inventory volume.</p>
+        <div class="chart-body" id="vizBuilders"></div>
+      </section>
+
+      <section class="chart-card" data-category="location">
+        <header><span>INVENTORY LIQUIDITY</span><b class="chart-badge">DAYS ON MARKET</b></header>
+        <p>Duration distribution for active listings indicating absorption speed.</p>
+        <div class="chart-body" id="vizDomHistogram"></div>
+      </section>
+
+      <section class="chart-card" data-category="delivery">
+        <header><span>CONSTRUCTION STAGE</span><b class="chart-badge">COMPLETION DONUT</b></header>
+        <p>Breakdown across Ready to Move, Under Construction, and Approvals.</p>
+        <div class="chart-body donut-body" id="vizStageDonut"></div>
+      </section>
+
+      <section class="chart-card" data-category="delivery">
+        <header><span>MARKET STATUS</span><b class="chart-badge">INVENTORY STATUS</b></header>
+        <p>Breakdown of active, under-offer, and leased inventory.</p>
+        <div class="chart-body" id="vizStatusStack"></div>
+      </section>
+
+      <section class="chart-card" data-category="pricing">
+        <header><span>PRICE REVISION VELOCITY</span><b class="chart-badge">MOVEMENTS</b></header>
+        <p>Recorded changes against previous asking prices: price drops vs increments.</p>
+        <div class="chart-body" id="vizMovement"></div>
+      </section>
+    </div>
+  </div>
+</aside>
+
+<aside class="drawer full-window-drawer owned-view" id="ownedDatabasesView" aria-hidden="true">
+  <div class="drawer-backdrop" id="ownedBackdrop"></div>
+  <div class="drawer-panel full-window">
+    <header class="drawer-header owned-header">
+      <div>
+        <div class="drawer-kicker"><i></i> ACCESS LEDGER · THIS BROWSER</div>
+        <h2>Your Databases</h2>
+        <p class="owned-header-sub">Every dataset you have requested access to, with its real order details.</p>
+      </div>
+      <div class="owned-header-actions">
+        <span class="full-view-close-label">ESC / CLOSE</span>
+        <button class="icon-button" id="closeOwnedView" aria-label="Close Your Databases">✕</button>
+      </div>
+    </header>
+
+    <div class="owned-toolbar">
+      <div class="owned-search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6"></circle><path d="m16 16 4 4"></path></svg>
+        <input id="ownedSearch" type="search" placeholder="Search dataset, order ID, email, format…" aria-label="Search your databases" />
+      </div>
+      <label class="owned-select">
+        <span>Status</span>
+        <select id="ownedStatusFilter" aria-label="Filter by status">
+          <option value="all">All statuses</option>
+          <option value="pending">Pending · unpaid</option>
+          <option value="fulfilled">Fulfilled</option>
+        </select>
+      </label>
+      <label class="owned-select">
+        <span>Sort</span>
+        <select id="ownedSort" aria-label="Sort databases">
+          <option value="newest">Newest first</option>
+          <option value="oldest">Oldest first</option>
+          <option value="dataset">Dataset A–Z</option>
+          <option value="format">Format</option>
+          <option value="records">Most records</option>
+        </select>
+      </label>
+      <label class="owned-select">
+        <span>Rows</span>
+        <select id="ownedPageSize" aria-label="Rows per page">
+          <option value="10" selected>10</option>
+          <option value="25">25</option>
+          <option value="all">All</option>
+        </select>
+      </label>
+      <div class="owned-toolbar-actions">
+        <button class="tool-button" id="ownedRefresh" type="button">Refresh</button>
+        <button class="primary-button small" id="ownedExportCsv" type="button">Export CSV ↓</button>
+      </div>
+    </div>
+
+    <div class="owned-subbar">
+      <span class="owned-view-status" id="ownedViewStatus">—</span>
+      <span class="owned-subnote">Orders stay pending because no payment gateway is connected. Access is simulated for testing.</span>
+    </div>
+
+    <div class="owned-table-card">
+      <div class="table-wrap full-window-table">
+        <table id="ownedTable">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Database</th>
+              <th>Order ID</th>
+              <th>Format</th>
+              <th>Records</th>
+              <th>Requested</th>
+              <th>Email</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="ownedRows"></tbody>
+        </table>
+      </div>
+      <div class="full-view-pagination-bar">
+        <span class="pagination-info" id="ownedPaginationInfo">Showing 0 of 0 databases</span>
+        <div class="pagination-buttons">
+          <button class="page-btn" id="ownedPageFirst" type="button" title="First page">«</button>
+          <button class="page-btn" id="ownedPagePrev" type="button" title="Previous page">‹ Prev</button>
+          <span class="page-current-indicator" id="ownedPageCurrent">Page 1 of 1</span>
+          <button class="page-btn" id="ownedPageNext" type="button" title="Next page">Next ›</button>
+          <button class="page-btn" id="ownedPageLast" type="button" title="Last page">»</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<aside class="details-drawer" id="detailsDrawer" aria-hidden="true">
+  <button class="details-backdrop" id="detailsBackdrop" aria-label="Close details"></button>
+  <div class="details-panel">
+    <header class="details-header">
+      <div>
+        <span class="details-kicker">DATABASE DETAILS</span>
+        <h2 id="detailsTitle">Select a dataset</h2>
+      </div>
+      <button class="icon-button" id="closeDetails" aria-label="Close details">×</button>
+    </header>
+    <div class="details-content">
+      <div class="details-summary">
+        <div class="details-icon" id="detailsCode">—</div>
+        <div><span>DATASET OVERVIEW</span><p id="detailsDescription">Select a dataset from the catalog to see its details.</p></div>
+      </div>
+      <div class="details-metrics">
+        <article><span>Records</span><strong id="detailsRecords">—</strong></article>
+        <article><span>Attributes</span><strong id="detailsFields">—</strong></article>
+        <article><span>Coverage</span><strong id="detailsCoverage">—</strong></article>
+        <article><span>Delivery</span><strong>Full in-app</strong></article>
+      </div>
+      <div class="details-grid">
+        <section>
+          <h3>What is included</h3>
+          <div class="attribute-list" id="detailsAttributes"></div>
+        </section>
+        <section>
+          <h3>Typical use cases</h3>
+          <div class="usecase-list" id="detailsUseCases"></div>
+        </section>
+      </div>
+      <div class="details-grid details-grid-small">
+        <section>
+          <h3>Data sources</h3>
+          <div class="source-list" id="detailsSources"></div>
+        </section>
+        <section>
+          <h3>Update schedule</h3>
+          <div class="schedule-box"><span>REFRESH</span><strong id="detailsFrequency">—</strong><p id="detailsFreshness">—</p></div>
+        </section>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<aside class="profile-page" id="profileDrawer" aria-hidden="true">
+  <button class="profile-backdrop" id="profileBackdrop" aria-label="Close profile"></button>
+  <div class="profile-panel">
+    <header class="profile-header">
+      <div>
+        <span>ACCOUNT SETTINGS · GOOGLE AUTH</span>
+        <h2>User Profile</h2>
+      </div>
+      <button class="icon-button" id="closeProfile" aria-label="Close profile">✕</button>
+    </header>
+
+    <div class="profile-body">
+      <nav class="profile-nav" aria-label="Profile navigation">
+        <button class="active" data-profile-tab="overview">Overview</button>
+        <button data-profile-tab="databases">Your Databases</button>
+        <button data-profile-tab="security">Account & Security</button>
+        <button data-profile-tab="api">API Access</button>
+      </nav>
+
+      <div class="profile-content">
+        <!-- Overview Tab -->
+        <section class="profile-tab active" id="profileTabOverview">
+          <div class="profile-person">
+            <img id="profileCardAvatar" class="profile-avatar" src="" alt="avatar" style="display:none;" />
+            <div id="profileCardInitials" class="profile-avatar">U</div>
+            <div>
+              <h3 id="profileCardName">User Account</h3>
+              <p id="profileCardEmail">Signed in with Google</p>
+            </div>
+            <button class="secondary-button" id="profileCardSignOutBtn">Sign out</button>
+          </div>
+
+          <div class="profile-stat-grid">
+            <article>
+              <span>STATUS</span>
+              <strong style="color:var(--lime);">Verified</strong>
+              <small>Google OAuth 2.0</small>
+            </article>
+            <article>
+              <span>ACCESS TIER</span>
+              <strong>Full access</strong>
+              <small>In-app · payment simulated</small>
+            </article>
+            <article>
+              <span>DATASETS</span>
+              <strong id="profileDatasetCount">—</strong>
+              <small>Pune property data</small>
+            </article>
+          </div>
+
+          <div class="profile-quick-actions">
+            <button class="primary-button small" id="viewYourDatabasesBtn" type="button">
+              Your Databases <span>→</span>
+            </button>
+            <small>Datasets you have already requested access to in this browser.</small>
+          </div>
+
+          <div style="margin-top: 24px;">
+            <div class="profile-list-head">
+              <h3>Connected Identity</h3>
+              <span style="font: 700 9px var(--mono); color: #7f8998;">PROVIDER</span>
+            </div>
+            <div class="security-row">
+              <div>
+                <strong>Google Workspace / Gmail</strong>
+                <small>OAuth 2.0 identity verified via Supabase Auth</small>
+              </div>
+              <b style="color:var(--green); font:700 11px var(--mono);">CONNECTED</b>
+            </div>
+            <div class="security-row">
+              <div>
+                <strong>Account Email</strong>
+                <small id="profileOverviewEmail">—</small>
+              </div>
+              <span style="color:#858d9d; font:9px var(--mono);">PRIMARY</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Your Databases Tab -->
+        <section class="profile-tab" id="profileTabDatabases">
+          <div class="profile-list-head">
+            <h3>Your Databases</h3>
+            <span id="ownedCount">0 databases</span>
+          </div>
+          <div class="profile-quick-actions owned-profile-action">
+            <button class="primary-button small" id="openOwnedFullBtn" type="button">
+              Open full page <span>↗</span>
+            </button>
+            <small>Search, filter and export your full access list.</small>
+          </div>
+          <p class="owned-note">
+            Access is simulated for testing. Each entry comes from a real order recorded when you requested access; orders stay pending because no payment gateway is connected.
+          </p>
+          <div class="owned-list" id="ownedDatabases"></div>
+        </section>
+
+        <!-- Account & Security Tab -->
+        <section class="profile-tab" id="profileTabSecurity">
+          <div class="profile-list-head">
+            <h3>Authentication & Session</h3>
+            <span style="font: 700 9px var(--mono); color: #7f8998;">SECURITY</span>
+          </div>
+          <div class="security-row">
+            <div>
+              <strong>User ID (Supabase UID)</strong>
+              <small id="profileUserId">—</small>
+            </div>
+          </div>
+          <div class="security-row">
+            <div>
+              <strong>Identity Provider</strong>
+              <small>Google OAuth (PKCE Secure Flow)</small>
+            </div>
+          </div>
+          <div class="security-row">
+            <div>
+              <strong>Session Status</strong>
+              <small>Active — token cached securely</small>
+            </div>
+            <button class="secondary-button" id="profileSecSignOutBtn">Sign out session</button>
+          </div>
+        </section>
+
+        <!-- API Access Tab -->
+        <section class="profile-tab" id="profileTabApi">
+          <div class="profile-list-head">
+            <h3>Programmatic Access</h3>
+            <span style="font: 700 9px var(--mono); color: #7f8998;">REST API</span>
+          </div>
+          <div class="api-key-row">
+            <div>
+              <strong>Browser Session Token</strong>
+              <small>Scoped to real-time catalog preview and sample export</small>
+            </div>
+            <code>web:session</code>
+          </div>
+          <div style="margin-top: 14px; padding: 14px; border: 1px dashed #2f3747; border-radius: 6px; background: #0c0f15;">
+            <p style="color: #858d9d; font-size: 11px; margin: 0; line-height: 1.55;">
+              Enterprise API keys with full snapshot ingestion access (<code style="color:var(--lime);">downloads:read</code>) are available for institutional licenses. Contact data engineering for dedicated pipeline webhooks.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</aside>
+
+<div class="modal-overlay" id="checkoutModal" aria-hidden="true">
+  <div class="modal">
+    <header class="modal-header">
+      <div><span>DATZ ACCESS</span><h2>Choose how to consume</h2></div>
+      <button class="icon-button" id="closeCheckout">×</button>
+    </header>
+    <div class="plan-options">
+      <button class="plan-card active" data-plan="snapshot">
+        <span class="plan-radio"></span><div><strong>Dataset snapshot</strong><small>Full in-app access — payment simulated for testing</small></div>
+      </button>
+      <button class="plan-card" data-plan="custom">
+        <span class="plan-radio"></span><div><strong>Custom scraper</strong><small>Request any portal or attribute</small></div><b>Custom</b>
+      </button>
+    </div>
+    <div class="checkout-content" id="checkoutStandard">
+      <div class="checkout-summary"><span>Selected dataset</span><strong id="checkoutTitle">—</strong><div><span>Records included</span><b id="checkoutRecords">—</b></div></div>
+      <input id="checkoutEmail" type="email" placeholder="Enter work email for order confirmation" style="margin-top: 10px;" />
+      <button class="primary-button checkout-button" id="completePurchase">Record access request (test) <span>↗</span></button>
+      <p class="access-flow-note"><b>Test mode:</b> Payment is not enabled yet. Recording this request opens the full dataset so you can test the access workflow.</p>
+      <p class="checkout-note">Orders are recorded for testing; no payment is collected. Once recorded, you can open the full dataset in-app.</p>
+    </div>
+    <div class="checkout-content" id="checkoutOrderStatus" hidden>
+      <div class="download-auth-badge order-ready">
+        <div class="auth-icon">✓</div>
+        <div>
+          <strong>Access ready — full dataset available</strong>
+          <small id="authDatasetName">—</small>
+        </div>
+      </div>
+      <div class="order-summary">
+        <div><span>Order ID</span><strong id="orderId">—</strong></div>
+        <div><span>Status</span><strong id="orderStatus">—</strong></div>
+        <div><span>Amount</span><strong id="orderAmount">—</strong></div>
+        <div><span>Payment</span><strong id="orderPaymentRequired">—</strong></div>
+      </div>
+      <p class="order-message" id="orderStatusMessage">—</p>
+      <p class="access-testing-note">Test access is enabled until a payment provider is connected. No payment is collected.</p>
+      <button class="primary-button checkout-button" id="openFullDatasetBtn" type="button">Open full dataset <span>↗</span></button>
+    </div>
+    <div class="checkout-content" id="checkoutCustom" hidden>
+      <input id="customEmail" type="email" placeholder="Your work email" required />
+      <input id="customLocations" placeholder="Target cities or pin codes" required />
+      <input id="customSources" placeholder="Your portal or data source (e.g. 99acres, MahaRERA)" required />
+      <textarea id="customAttributes" placeholder="Attributes you need (RERA ID, owner phone, carpet area, etc.)"></textarea>
+      <button class="primary-button checkout-button" id="submitCustom">Submit scraper request <span>↗</span></button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"><i></i><span></span></div>
+
+</div>
+    <script type="module" src="./src/web/main.js"></script>
+  </body>
+</html>

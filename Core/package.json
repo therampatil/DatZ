@@ -1,0 +1,41 @@
+{
+  "name": "datz-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:server": "tsx watch src/server.ts",
+    "build": "npm run build:server && npm run build:web",
+    "build:server": "tsc",
+    "build:web": "vite build",
+    "preview": "vite preview",
+    "start": "node dist/server.js",
+    "migrate": "tsx src/db/migrate.ts",
+    "seed": "tsx src/db/seed.ts",
+    "test": "tsx --test src/__tests__/*.test.ts"
+  },
+  "dependencies": {
+    "@dsnp/parquetjs": "^1.8.8",
+    "@supabase/supabase-js": "^2.119.0",
+    "cors": "^2.8.5",
+    "csv-stringify": "^6.6.0",
+    "dotenv": "^17.2.3",
+    "exceljs": "^4.4.0",
+    "express": "^5.1.0",
+    "pg": "^8.16.3",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.10.1",
+    "@types/pg": "^8.15.6",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.2"
+  },
+  "overrides": {
+    "uuid": "^11.1.1"
+  }
+}
